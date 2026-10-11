@@ -129,13 +129,13 @@ nav {
 }
 
 .first {
-  height: 7650px;
+  height: 7700px;
   color: white;
   background-color: black;
   border-radius: 0 0 50px 50px;
   font-size: 25px;
   font-weight: 900;
-  padding: 45px 15px 25px 15px;
+  padding: 55px 15px 25px 15px;
   text-align: center;
   flex-wrap: wrap;
   margin-bottom: 15px;
