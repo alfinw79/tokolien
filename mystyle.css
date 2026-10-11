@@ -1,0 +1,357 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  background-color: #0068d0;
+  scroll-behavior: smooth;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.gbr-head {
+  padding: 0;
+  position: relative;
+  background-color: black;
+  text-align: center;
+  background-image: url("https://news.pffpaint.com/wp-content/uploads/2021/09/Bendera-merah-putih-3.png");
+}
+
+.text-head {
+  -webkit-text-stroke: 1px #011652;
+  color: #0071e2;
+  font-size: 40px;
+  font-family: "Lobster Two", sans-serif;
+  position: absolute;
+  top: 75%;
+  left: 35%;
+  z-index: 5px;
+}
+
+nav {
+  background: #0047ab;
+  border-top: 8px solid #ff0000;
+  border-bottom: 8px solid #000000;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  z-index: 50;
+}
+
+.nav-container {
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+}
+
+.logo {
+  font-family: "Montenegrin Gothic One", sans-serif;
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  margin: 8px 12px 8px 100px;
+  padding: 10px 20px;
+  text-decoration: none;
+  transition: color 0.7s;
+}
+
+.logo:hover {
+  color: rgb(255, 0, 0);
+}
+
+.nav-links {
+  display: flex;
+  gap: 24px;
+  list-style: none;
+  padding-right: 150px;
+}
+
+.nav-links a {
+  font-size: 25px;
+  color: #ffffff;
+  padding: 16px 16px;
+  text-decoration: none;
+  transition: color 0.7s;
+}
+
+.nav-links a:hover {
+  color: rgb(255, 0, 0);
+}
+
+/* hamburger */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 5px;
+}
+
+.hamburger span {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+}
+
+/* Animasi jadi X */
+.hamburger.active span:nth-child(1) {
+  transform: rotate(45deg) translate(7px, 7px);
+}
+.hamburger.active span:nth-child(2) {
+  opacity: 0;
+}
+.hamburger.active span:nth-child(3) {
+  transform: rotate(-45deg) translate(6px, -6px);
+}
+
+.content {
+  padding: auto;
+  height: 8000px; /* wajib */
+  background-color: #ffff;
+}
+
+.paralax {
+  background-image: url("img/img0-1.jpg");
+  min-height: 1000px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-size: 130px;
+  color: rgb(210, 0, 0);
+  text-align: center;
+  font-family: "Lobster Two", sans-serif;
+  -webkit-text-stroke: 3px #260000;
+}
+
+.first {
+  height: 7500px;
+  color: white;
+  background-color: black;
+  border-radius: 0 0 50px 50px;
+  font-size: 25px;
+  font-weight: 900;
+  padding: 25px 15px 25px 15px;
+  text-align: center;
+  flex-wrap: wrap;
+  margin-bottom: 15px;
+}
+
+.card {
+  margin: 10px 35px;
+  justify-content: center;
+}
+
+.card-cont {
+  font-size: 30px;
+  border: 5px solid rgb(0, 114, 236);
+  margin: 10px 15px;
+  padding: 10px 10px;
+  background-color: 0;
+}
+
+.card-cont:hover {
+  transform: translateY(-5px);
+}
+
+.about-us {
+  color: rgb(0, 0, 0);
+  margin: 3px 25px;
+  padding: 75px 30px 30px 35px;
+  align-items: center;
+  text-align: center;
+  font-size: 50px;
+  border-radius: 0 80px 0 80px;
+  font-family: "Montenegrin Gothic One", sans-serif;
+  background-image: url("https://i.pinimg.com/736x/97/a7/55/97a755e0f5a54ae8799b864c4cd1ffb7.jpg");
+  background-size: small;
+}
+
+.wa a {
+  margin-top: 15px;
+  color: #ffffff;
+  background-color: #00900a;
+  border-radius: 0 20px 0 20px;
+  padding: 5px 10px;
+  text-decoration: none;
+}
+
+.map {
+  border: 3px solid #616161;
+}
+
+.footer {
+  color: rgb(255, 255, 255);
+  background-color: rgb(177, 14, 14);
+  border-radius: 20px 20px 0 0;
+  text-align: center;
+  padding: 25px 20px;
+}
+
+.footer ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+.footer a {
+  margin: 10px 5px;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  padding: 10px 15px;
+  font-size: 30px;
+}
+
+.footer a:hover {
+  color: rgb(0, 92, 240);
+  border-radius: 10px;
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  html {
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+  }
+
+  nav {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 950;
+  }
+
+  .gbr-head {
+    background-image: url("https://news.pffpaint.com/wp-content/uploads/2021/09/Bendera-merah-putih-3.png");
+    background-size: cover;
+    height: 100%;
+  }
+
+  .gbr-head img {
+    width: 100%;
+    height: 300%;
+  }
+
+  .text-head img {
+    width: 70px;
+    height: 40px;
+  }
+  .text-head {
+    -webkit-text-stroke: 1px #011652;
+    font-size: 20px;
+    position: absolute;
+    top: 70%;
+    left: 20%;
+    z-index: 5px;
+  }
+
+  .content {
+    padding: auto;
+    height: 950px; /* wajib */
+    background-color: #ffff;
+  }
+  .paralax {
+    min-height: 900px;
+    background-size: 800px 800px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-size: 50px;
+    text-align: center;
+    color: rgb(255, 0, 0);
+    -webkit-text-stroke: 1px #210000;
+  }
+
+  .first {
+    font-size: 20px;
+    height: auto;
+    padding: 50px 5px 50px 5px;
+  }
+
+  .card,
+  .card-cont {
+    font-size: 20px;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 10px 0;
+    border: 2px solid rgb(0, 114, 236);
+  }
+
+  .card .card-cont img {
+    width: 100%;
+    height: 80%;
+  }
+  .about-us {
+    font-size: 15px;
+    padding: 50px 20px;
+    margin: 10px 0px;
+  }
+  .about-us iframe {
+    width: 100%;
+    height: 200px;
+  }
+
+  .footer ul a {
+    font-size: 15px;
+    margin: 10px 0px;
+  }
+
+  .nav-links {
+    position: absolute;
+    top: 52px;
+    left: 0;
+    width: 100%;
+    background: #003dc1;
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out;
+    padding: 0;
+  }
+
+  .nav-links.active {
+    max-height: 300px;
+    padding: 10px 0;
+  }
+
+  .nav-links li {
+    width: 100%;
+    text-align: center;
+  }
+
+  .nav-links a {
+    display: block;
+    padding: 12px 0;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  .logo {
+    margin: 8px 12px 8px 30px;
+    padding: 10px 20px;
+  }
+}
+
+.reveal {
+  opacity: 0;
+  transition: all 2s ease;
+}
+
+.reveal-right {
+  transform: translateY(60px);
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateX(0) translateY(0); /* balik ke tengah */
+}
